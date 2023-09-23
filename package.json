@@ -1,0 +1,79 @@
+{
+  "name": "nfthost",
+  "description": "NFT Collection Generator and Minting Website Hosting",
+  "version": "0.0.1",
+  "author": "StephenAsuncion",
+  "publisher": "StephenAsuncion",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenasuncionDEV/nfthost.git"
+  },
+  "homepage": "https://github.com/stephenasuncionDEV/nfthost#readme",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/stephenasuncionDEV"
+  },
+  "bugs": {
+    "url": "https://github.com/stephenasuncionDEV/nfthost/issues"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "dev:no-cache": "rm -rf .next/cache && npm run dev",
+    "lint": "next lint",
+    "lint:format": "prettier --check .",
+    "lint:staged": "npm run lint && npm run lint:format",
+    "format": "prettier --write .",
+    "build": "next build",
+    "build:analyze": "cross-env ANALYZE=true npm run build",
+    "postbuild": "next-sitemap",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.6",
+    "@chakra-ui/theme-tools": "^2.0.16",
+    "@coinbase/wallet-sdk": "^3.6.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@react-icons/all-files": "^4.1.0",
+    "@solana/web3.js": "^1.73.0",
+    "@stripe/react-stripe-js": "^1.16.2",
+    "@stripe/stripe-js": "^1.46.0",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "axios": "^1.2.2",
+    "crypto-js": "^4.1.1",
+    "ethers": "^5.7.2",
+    "file-saver": "^2.0.5",
+    "framer-motion": "^8.2.4",
+    "html-react-parser": "^3.0.7",
+    "jszip": "^3.10.1",
+    "jwt-decode": "^3.1.2",
+    "lzutf8": "^0.6.3",
+    "next": "^13.1.1",
+    "next-sitemap": "^3.1.44",
+    "posthog-js": "^1.39.2",
+    "react": "18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-confetti": "^6.1.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-google-recaptcha": "^2.1.0",
+    "react-responsive": "^9.0.2",
+    "react-use": "^17.4.0",
+    "react-window": "^1.8.8",
+    "recharts": "^2.2.0",
+    "sass": "^1.57.1",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^13.5.2",
+    "cross-env": "^7.0.3",
+    "eslint": "8.31.0",
+    "eslint-config-next": "13.1.1",
+    "eslint-config-prettier": "^8.6.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.2"
+  },
+  "main": "middleware.js",
+  "keywords": []
+}
