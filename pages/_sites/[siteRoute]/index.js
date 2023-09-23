@@ -249,7 +249,7 @@ export async function getStaticPaths() {
   );
 
   return {
-    paths: await mappedSubdomains(),
+    paths: await mappedSubdomains.json(),
     fallback: true,
   };
 }
